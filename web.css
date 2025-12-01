@@ -1,0 +1,175 @@
+/* ------------------------------------------- */
+/* web.css: Full Stylesheet for Apna Tutor Page (Revised for Stylish Tags) */
+/* ------------------------------------------- */
+
+/* General Reset and Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed default font for a modern look */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for the overall page */
+    color: #fff; /* Default text color is white as in the blue section */
+    line-height: 1.6;
+}
+
+/* Main Content Container (The blue area in the image) */
+.main-container {
+    display: flex;
+    flex-direction: column; /* Stacks all sections vertically */
+    align-items: center; /* Centers content horizontally within the container */
+    width: 100%;
+    max-width: 800px; /* Limits width on large screens */
+    margin: 20px auto; /* Centers the container on the page */
+    padding: 20px;
+    background-color: #318CE7; /* Primary blue background color from image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Stronger shadow for depth */
+    border-radius: 8px; /* Slightly rounded container corners */
+}
+
+/* Main Heading Style (Top Left, Yellow text) */
+.main-title-section {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.main-title-section h1 {
+    font-size: 3em; /* Large size */
+    font-weight: 900; /* Bold weight */
+    color: #FFD700; /* Gold/Yellow color from image */
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.main-title-section p {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Image Section Styling (Aligned and centered) */
+.image-section {
+    display: flex; /* Aligns images horizontally */
+    justify-content: center; /* Centers the group of images */
+    gap: 20px; /* Space between the two images */
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.img-fluid {
+    max-width: 100%; /* Ensures images are responsive and don't overflow */
+    height: auto; 
+    border-radius: 5px; /* Slightly rounded corners on images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    object-fit: contain; 
+}
+
+/* Explanation Section (Three Columns Layout) */
+.explanation-section {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%;
+    gap: 15px; /* Space between columns */
+    margin-bottom: 30px;
+}
+
+.column {
+    flex: 1; /* Makes columns equal width */
+}
+
+/* Sub-headings style (Medium size, white, bold) */
+.explanation-section h2 {
+    color: #FFFFFF; 
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ffffff50; /* Subtle line below heading */
+    padding-bottom: 5px;
+}
+
+.explanation-section ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.explanation-section li {
+    margin-bottom: 8px;
+}
+
+/* Action Buttons Section (Registration Process/Form) */
+.action-buttons-section {
+    text-align: center;
+    margin-bottom: 20px; 
+    width: 100%;
+}
+
+.but1, .but2 {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.but1 { background-color: #8B884E; } /* Olive/gold color */
+.but2 { background-color: #4682B4; } /* Steel blue color */
+
+
+/* Text above social media buttons */
+p {
+    color: white; 
+}
+
+/* Social Media Tags (Bottom Center, Icons Only) - STYLISH TAGS */
+.social-media-buttons {
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the "tags" */
+}
+
+.social-btn {
+    display: inline-flex; /* Use flexbox for centering icon */
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px; /* Padding makes them look like nice tags */
+    margin: 0;
+    color: #FFD700; /* Use the gold color for contrast */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background fill */
+    border: 1px solid #FFD700; /* Gold border */
+    text-decoration: none;
+    border-radius: 4px; /* Slightly rounded "tag" look */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    font-size: 1.2em; /* Icon size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.social-btn:hover {
+    background-color: #FFD700; /* Solid gold background on hover */
+    color: #318CE7; /* Blue icon color on hover for contrast */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Remove specific platform colors as we use a universal style */
+.whatsapp, .email, .instagram { background-color: transparent; }
+
+
+/* Simple Responsiveness for small screens */
+@media (max-width: 600px) {
+    .explanation-section, .image-section {
+        flex-direction: column; /* Stack columns/images vertically on small screens */
+        gap: 10px;
+    }
+    
+    .social-media-buttons {
+        flex-wrap: wrap; /* Allow tags to wrap on very small screens */
+    }
+
+    .main-title-section h1 {
+        font-size: 2em; /* Smaller title on mobile */
+    }
+}

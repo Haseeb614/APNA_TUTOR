@@ -1,0 +1,79 @@
+body {
+    font-family: sans-serif;
+    background-color: #003366; /* Deep blue background, similar to NUST branding */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+header {
+    background: #ffcc00; /* Yellow header color */
+    color: #003366;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.section {
+    flex-basis: 48%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+h2 {
+    color: #ffcc00; /* Yellow headings */
+}
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+.form-section {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+select, button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+select {
+    background-color: #fff;
+    color: #003366;
+    margin-right: 10px;
+}
+button {
+    background-color: #ffcc00; /* Yellow button */
+    color: #003366;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #e8491d; /* Orange hover effect */
+}
+.whatsapp {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffcc00;
+}

@@ -1,0 +1,78 @@
+/* ------------------------------------------- */
+/* web2.css: Full Stylesheet for the Second Page */
+/* ------------------------------------------- */
+
+/* General Body Styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for the overall page */
+    color: #fff; /* Default text color is white in the blue section */
+    line-height: 1.6;
+}
+
+/* Main Content Container (Matching the blue area from the main page) */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto; /* Centers the container on the page */
+    padding: 20px;
+    background-color: #318CE7; /* Primary blue background color from image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
+    border-radius: 8px; 
+}
+
+/* Main Heading Style (Large, matching main page's sub-headings) */
+h1 {
+    color: #FFFFFF; /* White color */
+    font-size: 1.8em;
+    border-bottom: 2px solid #FFD700; /* Yellow line under the main heading */
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Sub-headings for steps (matching main page's column headings) */
+h2 {
+    color: #FFD700; /* Gold/Yellow color for subheadings */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Contact Info Section (Matching main page's divider line) */
+.contact-info {
+    margin-top: 20px;
+    border-top: 1px solid #ffffff50;
+    padding-top: 15px;
+}
+
+/* Back Button Styling (Matching one of the main page buttons) */
+.back-button {
+    background-color: #4682B4; /* Steel blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1em;
+    align-self: center; /* Center the button within the flex container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background-color: #3a6a99;
+}
