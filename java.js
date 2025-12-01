@@ -9,7 +9,7 @@ function Form() {
 
 // Function to go back to the main page (assuming web.html is your main page)
 function ima() {
-     window.location.href ='web.html';
+     window.location.href ='index.html';
 }
 
 // Function to go to the second page (assuming web2.html is the registration process page)
@@ -18,4 +18,5 @@ function page2() {
 }
 function page3() {
      window.location.href ='web3.html';
+
 }
