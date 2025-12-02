@@ -348,38 +348,8 @@ p {
         font-size: 2em; /* Smaller title on mobile */
     }
 }
-/* 1. Define the final state of the animation */
-@keyframes fadeInAnimation {
-    from {
-        opacity: 0;
-        transform: translateY(20px); /* Starts slightly below its final position */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-/* 2. Class for elements that are hidden before the animation runs (JS adds this) */
-.fade-hidden {
-    opacity: 0;
-    /* This ensures they don't jump into view before the JS runs */
-    transition: opacity 0.1s; 
-}
 
-/* 3. Class added by JavaScript to start the animation */
-.fade-in {
-    animation: fadeInAnimation 0.8s ease-out forwards; /* 0.8 seconds duration */
-    /* Add a slight delay for subsequent sections to make them sequential */
-    animation-delay: 0.1s; 
-}
 
-/* Optional: Add some smooth transitions to images */
-.img-fluid {
-    transition: transform 0.3s ease, opacity 0.5s ease;
-}
 
-.img-fluid:hover {
-    transform: scale(1.05);
-}
 
