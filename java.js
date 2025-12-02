@@ -68,11 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // These functions need to be global (attached to window) 
     // to be accessible from the inline onclick attributes in your HTML
     window.page2 = function() {
-        alert("Registration Process button clicked. Implement your navigation logic here!");
+         window.location.href ='web2.html';
     };
 
     window.page3 = function() {
-        alert("Proceed for Registration button clicked. Implement your navigation logic here!");
+         window.location.href ='web3.html';
     };
 });
+
 
